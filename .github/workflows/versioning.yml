@@ -15,6 +15,6 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
       - run: git config --global user.name 'abraham'
       - run: git config --global user.email 'abraham.berhe@gmail.com'
-      - run: npm version patch -m "[RELEASE] %s"
+      - run: npm version patch -m "version %s"
       - run: git push
         
